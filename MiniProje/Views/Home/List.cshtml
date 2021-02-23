@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Anket>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>List</title>
+</head>
+<body>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Surname</td>
+                <td>Mail</td>
+                <td>Phone</td>
+                <td>Confirm</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var anket in Model)
+            {
+            <tr>
+                <td>@anket.Name</td>
+                <td>@anket.SurName</td>
+                <td>@anket.Email</td>
+                <td>@anket.Phone</td>
+                <td>@anket.Confirm</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+
+    
+
+</body>
+</html>
